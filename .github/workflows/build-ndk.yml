@@ -25,9 +25,13 @@ on:
       - '!createqmod.ps1'
       - '**.md'
       - '.gitignore'
-  pull_request:
-      - 'master'
-      - 'main'
+  pull_request: 
+    branches:
+        - 'master'
+        - 'main'
+        - 'dev/*'
+        - 'feat/*'
+        - 'fix/*'
 
 env:
     module_id: "TestMod"
